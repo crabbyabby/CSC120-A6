@@ -1,39 +1,39 @@
 ## Bug 1
-Brief description:  
-Failed unit test: 
+Brief description: buy() doesn't throw an exception if the computer is already added to the inventory
+Failed unit test: test_buy_exception()
 
 ## Bug 2
-Brief description:  
-Failed unit test: 
+Brief description: buy() doesn't add the requested computer into the inventory, just a pre-determined newComputer.
+Failed unit test: test_buy()
 
 ## Bug 3
-Brief description:  
-Failed unit test: 
+Brief description: sell() doesn't throw an exception if the computer is not in the inventory
+Failed unit test: test_sell_exception()
 
 ## Bug 4
-Brief description:  
-Failed unit test: 
+Brief description: toString() prints out an incorrect description of the planned computer due to the Computer() constructor being incorrect
+Failed unit test: test_toString()
 
 ## Bug 5
-Brief description:  
-Failed unit test: 
+Brief description: setOS() always sets the operating system to "None" and not the actual parameter
+Failed unit test: test_setOS()
 
 ## Bug 6
-Brief description:  
-Failed unit test: 
+Brief description: Computer constructer always sets memory to 16 and ignores the memory parameter.
+Failed unit test: test_Computer_memory()
 
 ## Bug 7
-Brief description:  
-Failed unit test: 
+Brief description: Computer constructor always sets price to 0 and ignores the price parameter.
+Failed unit test: test_Computer_price()
 
 ## Bug 8
-Brief description:  
-Failed unit test: 
+Brief description: Computer printInventory uses <= instead of < in the for-loop which will lead to an IndexOutOfBounds error.
+Failed unit test: test_printInventory()
 
 ## Bug 9
-Brief description:  
-Failed unit test: 
+Brief description: Computer refurbish does not set the newOS to the parameter, due in part to setOS being bugged.
+Failed unit test: test_refurbish()
 
 ## Bug 10
-Brief description:  
-Failed unit test: 
+Brief description: Refurbish() uses != which compares the objects references (as in if they are the exact same object) instead of just seeing if they are equal
+Failed unit test: test_refurbish_equate()

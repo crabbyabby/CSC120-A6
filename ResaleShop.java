@@ -15,7 +15,6 @@ public class ResaleShop {
         this.inventory = new ArrayList<>();
         Computer newComputer = new Computer("2019 MacBook Pro", "Intel", 256, 16, "High Sierra", 2019, 1000);
         this.inventory.add(newComputer);
-
     }
 
     /**
