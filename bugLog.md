@@ -11,8 +11,8 @@ Brief description: sell() doesn't throw an exception if the computer is not in t
 Failed unit test: test_sell_exception()
 
 ## Bug 4
-Brief description: toString() prints out an incorrect description of the planned computer due to the Computer() constructor being incorrect
-Failed unit test: test_toString()
+Brief description: ResaleShop constructor creates shop already having a computer in its inventory, when it shouldn't have anything
+Failed unit test: test_ResaleShop_Constructor()
 
 ## Bug 5
 Brief description: setOS() always sets the operating system to "None" and not the actual parameter
@@ -35,5 +35,5 @@ Brief description: Computer refurbish does not set the newOS to the parameter, d
 Failed unit test: test_refurbish()
 
 ## Bug 10
-Brief description: Refurbish() uses != which compares the objects references (as in if they are the exact same object) instead of just seeing if they are equal
-Failed unit test: test_refurbish_equate()
+Brief description: Refurbish() sets price incorrectly, giving a high price (2500) when it should assign 250.
+Failed unit test: test_refurbish_price()

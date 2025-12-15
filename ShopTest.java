@@ -37,10 +37,9 @@ public class ShopTest {
     }
 
     @Test
-    public void test_toString(){
-        Computer newComp = new Computer("2018 MacBook Pro", "Intel", 256, 32, "Low Sierra", 2020, 5000);
-        String theoreticalReturn = "2018 MacBook Pro\nIntel\n256\n32\nLow Sierra\n2020\n5000";
-        assertEquals(theoreticalReturn, newComp);
+    public void test_ResaleShop_Constructor(){
+        ResaleShop shop = new ResaleShop();
+        assertEquals(null, shop.inventory.get(0));
     }
 
     @Test
@@ -81,13 +80,11 @@ public class ShopTest {
     }
 
     @Test
-    public void test_refurbish_equate() throws Exception {
+    public void test_refurbish_price() throws Exception {
         ResaleShop shop = new ResaleShop();
-        Computer comp = shop.inventory.get(0);
-        String stringNone = new String("None");
-        String originalOS = comp.operatingSystem;
-        shop.refurbish(comp, stringNone);
-        assertEquals(originalOS, comp.operatingSystem);
+        Computer comp = new Computer("2010 MacBook Pro", "Intel", 256, 64, "High Sierra", 2010, 5000);
+        shop.refurbish(comp, "OS");
+        assertEquals(250, comp.price);
     }   
        
 }
